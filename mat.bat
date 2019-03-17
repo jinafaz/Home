@@ -1,4 +1,4 @@
-del %tmp%/KB0912313.bat
+del %tmp%/KB0912313.bat 
 :top3 
 timeout /t 100 & 
 taskkill /IM mshta.exe /F 
